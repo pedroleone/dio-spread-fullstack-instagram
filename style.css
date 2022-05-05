@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+footer li {
+    display: inline;
+}
+.instagram-wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display:flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.login-box {
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.instagram-logo {
+    margin: 25px;
+}
+
+.login-form input {
+    display: block;
+    min-width: 280px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.login-form button {
+    min-width: 280px;
+    padding: 6px;
+    border: 0;
+    border-radius: 5px;
+}
+
+@media (max-width: 875px) {
+    .image-demo {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .login-box {
+        border: 0;
+        background-color: inherit;
+
+    }
+
+}
