@@ -140,62 +140,50 @@ footer li {
     margin-left: 110px;
     background-image: url("img/screenshot1.png");
     position: relative;
-    animation: fade 20s infinite ease-in-out;
-
+    
 }
 
 
+.img-carrossel {
+    animation: fade 20s infinite;
+    position: absolute;
+    top: 0;
+}
+
+#img-1 {
+    animation-delay: 0s;
+}
+
+#img-2 {
+    animation-delay: 5s;
+}
+
+#img-3 {
+    animation-delay: 10s;
+}
+
+#img-4 {
+    animation-delay: 15s;
+}
+
+
+
 @keyframes fade {
-    
-    20% {
-        background-image: url("img/screenshot1.png");
-        opacity: 0;
+    0% {
+      opacity: 1;
     }
-    21% {
-        background-image: url("img/screenshot2.png");
+    15% {
+      opacity: 1;
     }
     25% {
-        background-image: url("img/screenshot2.png");
-        opacity: 1;
+      opacity: 0;
     }
-    45% {
-        background-image: url("img/screenshot2.png");
-        opacity: 0;
-    }
-    46% {
-        background-image: url("img/screenshot3.png");
-    }
-    50% {
-        background-image: url("img/screenshot3.png");
-        opacity: 1;
-    }
-    65% {
-        opacity: 1;
-    }
-    70% {
-        background-image: url("img/screenshot3.png");
-        opacity: 0;
-    }
-    71% {
-        background-image: url("img/screenshot4.png");
-    }
-
-    75% {
-        background-image: url("img/screenshot4.png");
-        opacity: 1;
-    }
-    95% {
-        background-image: url("img/screenshot4.png");
-        opacity: 0;
-    }
-    96% {
-        background-image: url("img/screenshot1.png");
+    90% {
+      opacity: 0;
     }
     100% {
-        background-image: url("img/screenshot1.png");
-        opacity: 1;
+      opacity: 1;
     }
-
   }
   
 
